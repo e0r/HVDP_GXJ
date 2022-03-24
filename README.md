@@ -12,3 +12,12 @@ https://circuitcellar.com/research-design-hub/high-voltage-differential-probe/
 不过估计会非常难调。
 ![SDS00014](https://user-images.githubusercontent.com/33488997/159395833-b3ff02b7-5d15-4577-8093-3d532e222d59.png)
 ![SDS00015](https://user-images.githubusercontent.com/33488997/159395877-71a513a5-425b-4770-947f-e6c24aafe02d.png)
+
+用LTSPICE仿真了一下。应该在输入电容电阻的前面加2k电阻来消除表笔电感的影响
+麦科信的探头的做法是在电容里面串2.2k电阻，仿真结果类似。在P5205上面找不到类似的电阻。
+
+麦克信的探头在低端分压电容上面串了100欧电阻，而P5205只在可调电容上串电阻。
+仿真能看到麦克信的做法会在20MHZ左右有很大的赋值响应，可以学一下P5205的做法
+
+另外仿真能看到在后级8091的电阻上并电容会有比较好的效果，circuitcellar和麦克信的后级都用的电流反馈放大器，没有参考价值。
+做了这些改进后大概能用30块钱的成本获得20MHZ带宽的探头
