@@ -1,8 +1,9 @@
 # HVDP_8091
+基于GS8091的高压差分探头
 High Voltage Differential Probe base on GS8091
 https://circuitcellar.com/research-design-hub/high-voltage-differential-probe/
 对比原设计，改进了：
-1.运放换成国产货GS8091，便宜了很多，虽然带宽也小了很多
+1.运放换成国产货GS8091，便宜了很多，虽然带宽也小了很多，用了一堆0.1%低温漂电阻，C0G电容总成本也低于30块
 2.添加2k电阻补偿输入线电感，
   麦科信的探头的做法是在电容里面串2.2k电阻，仿真结果类似。在P5205上面找不到类似的电阻。
 3.添加2.5欧电阻，增加了一点点带宽，虽然牺牲了幅频特性曲线平坦度
