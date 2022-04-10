@@ -15,5 +15,6 @@ https://circuitcellar.com/research-design-hub/high-voltage-differential-probe/
 7.输出有95MHz的震荡，可以通过并联电容/换高阻线和匹配电阻减小。  
 8.噪声大是因为电池内阻太大了，34063会给电池带来20mV的压降。这个压降会通过LDO传给运放造成输出突变  
 9.第一版PCB去耦电容太少了，完全不够，挖空运放下面的地铺铜可能会改善一点性能，用一堆磁珠滤波好像也不错。不懂为啥从麦克信到泰克都是每路输入用两个可调电容，也许这样更好调，或许是需要补偿不同的频率  
+10.性能还很差，在想办法改进中
 ![SDS00014](https://user-images.githubusercontent.com/33488997/159395833-b3ff02b7-5d15-4577-8093-3d532e222d59.png)  
 ![SDS00015](https://user-images.githubusercontent.com/33488997/159395877-71a513a5-425b-4770-947f-e6c24aafe02d.png)
